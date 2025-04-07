@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TripMates</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        /* Header Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        .header {
+            background-color: #2E2E2E;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 50px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff7f27;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .nav-links a:hover {
+            color: #ff7f27;
+        }
+
+        .nav-links i {
+            font-size: 18px;
+        }
+
+        .login-btn {
+            background-color: #ff7f27;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            border: none;
+            font-size: 14px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .login-btn:hover {
+            background-color: #e66a1a;
+        }
+        .hero {
+            background: url('image.png') no-repeat center/cover;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 5px black;
+        }
+        .search-bar {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .search-bar input {
+            padding: 10px;
+            width: 250px;
+        }
+        .search-bar button {
+            padding: 10px;
+            background: orange;
+            border: none;
+            cursor: pointer;
+        }
+        .services, .packages, .why-us, .map, .destinations, .testimonials, .newsletter {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .service-grid, .package-grid, .benefits-grid, .destination-grid, .testimonial-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .service-item, .package-item, .benefits-item, .destination-item, .testimonial-item {
+            background: lightgray;
+            padding: 20px;
+            border-radius: 10px;
+            width: 150px;
+        }
+        .map img {
+            width: 200px;
+        }
+        footer {
+            background: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .newsletter {
+            background: gray;
+            padding: 50px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">TripMates</div>
+        <nav class="nav-links">
+            <a href="#"><i class="fas fa-home"></i> Home</a>
+            <a href="#"><i class="fas fa-suitcase"></i> Packages</a>
+            <a href="#"><i class="fas fa-search"></i> Search</a>
+            <a href="#"><i class="fas fa-envelope"></i> Contact Us</a>
+        </nav>
+        <button class="login-btn">Signup / Login</button>
+    </header>
+    <section class="hero">
+        <h2>Explore the World</h2>
+        <div class="search-bar">
+            <input type="text" placeholder="Search Destinations">
+            <button>Search</button>
+        </div>
+    </section>
+<
+    <section class="services">
+        <h2>TripMates Holidays</h2>
+        <div class="service-grid">
+            <div class="service-item">
+                <img src="https://img.icons8.com/?size=48&id=17569&format=png" alt="Beach" style="width:50px;"><br>Beach Trips
+            </div>
+            <div class="service-item">
+                <img src="https://img.icons8.com/doodle/64/mountain.png" alt="Mountains" style="width:50px;"><br>Mountain Treks
+            </div>
+            <div class="service-item">
+                <img src="https://img.icons8.com/?size=48&id=104084&format=png" alt="City Tour" style="width:50px;"><br>City Tours
+            </div>
+            <div class="service-item">
+                <img src="https://img.icons8.com/doodle/64/parachute.png" alt="Adventure" style="width:50px;"><br>Adventure Sports
+            </div>
+            <div class="service-item">
+                <img src="https://img.icons8.com/doodle/64/cruise-ship.png" alt="Cruise" style="width:50px;"><br>Cruise Tours
+            </div>
+            <div class="service-item">
+                <img src="https://img.icons8.com/doodle/64/lion.png" alt="Wildlife" style="width:50px;"><br>Wildlife Safaris
+            </div>
+        </div>
+    </section>
+    
+    <section class="packages">
+        <h2>Our Bestseller Packages</h2>
+        <div class="package-grid">
+            <div class="package-item">
+                <img src="https://plus.unsplash.com/premium_photo-1664116707664-012c2fd94fba?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3
+                fDB8MHxzZWFyY2h8OXx8a2Fsc3ViYWklMjBwZWFrfGVufDB8fDB8fHww" alt="Kalsubai Peak" style="width:100%; border-radius: 10px;"><br>
+                <strong>Kalsubai Peak</strong>
+            </div>
+            <div class="package-item">
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Beach Paradise" style="width:100%; border-radius: 10px;"><br>
+                <strong>Beach Paradise</strong>
+            </div>
+            <div class="package-item">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" alt="Tropical Retreat" style="width:100%; border-radius: 10px;"><br>
+                <strong>Tropical Retreat</strong>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section class="why-us">
+        <h2>Why start with TripMates?</h2>
+        <div class="benefits-grid">
+            <div class="benefits-item">       
+            <img src="https://img.icons8.com/?size=80&id=EbDZhzd3Tn3Y&format=png"  style="width:100%; border-radius:10px;">
+            <p>Best Deals</p>
+            </div>
+            <div class="benefits-item">
+            <img src="https://img.icons8.com/?size=80&id=B1TajRDw0vmK&format=png"  style="width:100%; border-radius:10px;">
+            <p>24/7 Support</p>
+            </div>
+            <div class="benefits-item">
+            <img src="https://img.icons8.com/?size=80&id=bQrAaR2mjXiX&format=png"  style="width:100%; border-radius:10px;">
+            <p>Handpicked Destinations</p>
+            </div>
+        </div>
+    </section>
+    <section class="map">
+        <h2>Choose your next destination</h2>
+        <img src="https://www.mapsofindia.com/images2/india-map-2019.jpg" alt="India Map">
+    </section>
+    <section class="destinations">
+  <h2>All Destinations</h2>
+  <div class="destination-grid">
+    <div class="destination-item">
+      <img src="https://images.unsplash.com/photo-1496566084516-c5b96fcbd5c8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MT
+      l8fEdvYXxlbnwwfHwwfHx8MA%3D%3Ds"  style="width:100%; border-radius:10px;">
+    </div>
+    <div class="destination-item">
+      <img src="https://images.unsplash.com/photo-1605649487212-47bdab064df7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8TWFuYWxpfGVufDB8fDB8fHww"  style="width:100%; border-radius:10px;">
+    </div>
+    <div class="destination-item">
+      <img src="https://images.unsplash.com/photo-1477587458883-47145ed94245?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NH
+      x8amFpcHVyfGVufDB8fDB8fHww"  style="width:100%; border-radius:10px;">
+    </div>
+    <div class="destination-item">
+      <img src="https://images.unsplash.com/photo-1587474260584-136574528ed5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8RGVsaGl8ZW58MHx8MHx8fDA%3D"  style="width:100%; border-radius:10px;">
+    </div>
+    <div class="destination-item">
+      <img src="https://images.unsplash.com/photo-1626082895617-2c6de34f6af3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fERhcmplZWxpbmd8ZW58MHx8MHx8fDA%3D"  style="width:100%; border-radius:10px;">
+    </div>
+    <div class="destination-item">
+      <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8
+      Mnx8a2VyYWxhfGVufDB8fDB8fHww"  style="width:100%; border-radius:10px;">
+    </div>
+  </div>
+</section>
+
+    
+    
+    <section class="testimonials">
+        <h2>Opinions of those who have traveled with us</h2>
+        <!-- <div class="testimonial-grid">
+            <div class="testimonial-item">John Doe: Amazing Experience!</div>
+            <div class="testimonial-item">Jane Smith: Best trip ever!</div>
+            <div class="testimonial-item">Mike Johnson: Loved the adventure!</div>
+        </div> -->
+        <div class="testimonial-grid">
+            <!-- <div class="row justify-content-center"> -->
+              
+              <!-- Testimonial 1 -->
+              <!-- <div class="col-md-4"> -->
+                <div class="testimonial-item">
+                  <img src="https://randomuser.me/api/portraits/men/31.jpg" alt="Oliver Wright">
+                  <p class="testimonial-name">Oliver Wright</p>
+                  <p class="testimonial-location">Visited: India</p>
+                  <p class="testimonial-text">“Convenient for booking short tours with flexible cancellation, though some options are pricey.”</p>
+                </div>
+              <!-- </div> -->
+          
+              <!-- Testimonial 2 -->
+              <!-- <div class="col-md-4"> -->
+                <div class="testimonial-item">
+                  <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sophia Martinez">
+                  <p class="testimonial-name">Sophia Martinez</p>
+                  <p class="testimonial-location">Visited: India</p>
+                  <p class="testimonial-text">“Great for curated local tours, but last-minute availability can be an issue.”</p>
+                </div>
+              <!-- </div> -->
+          
+              <!-- Testimonial 3 -->
+              <!-- <div class="col-md-4"> -->
+                <div class="testimonial-item">
+                  <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Jack Blo">
+                  <p class="testimonial-name">Jack Blo</p>
+                  <p class="testimonial-location">Visited: India</p>
+                  <p class="testimonial-text">“Budget-friendly for short trips, with discounts.”</p>
+                </div>
+              <!-- </div> -->
+          
+            <!-- </div> -->
+          </div>
+    </section>
+    <section class="newsletter">
+        <h2>Sign up for the Newsletter</h2>
+        <input type="text" placeholder="Name and Surname"> <br>
+        <input type="email" placeholder="Enter your email"> <br>
+        <button>Subscribe</button>
+    </section>
+    <footer>
+        <p>&copy; 2025 TripMates. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
